@@ -17,7 +17,6 @@ export const addUser = async (body) => {
       password: hasPassword,
     });
     const result = await userData.save();
-    console.log("result::", result);
     return result;
   } catch (error) {
     return error;
